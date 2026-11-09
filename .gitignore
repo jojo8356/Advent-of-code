@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Binaires produits par la compilation des solutions C / Rust
+# (2025/day12/part1, 2015/day20/part2, ...)
+20*/day*/*
+!20*/day*/*.py
+!20*/day*/*.c
+!20*/day*/*.rs
+
+# Éditeurs / OS
+.DS_Store
