@@ -89,6 +89,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 19 | **LXWCKGRAOY** | **17302** | ✅ |
 | 20 | **258** | **707** | ✅ |
 | 21 | **158** | **2301762** | ✅ |
+| 22 | **5256** | **2511345** | ✅ |
 
 ## 2020
 
@@ -991,6 +992,20 @@ Exemple officiel (2 itérations) : grille intermédiaire `#..#/..../..../#..#` p
 **12** pixels ✔ — exactement les valeurs de l'énoncé. Recalcul indépendant
 (indexation des blocs, rotations explicites) : 158 / 2301762 à l'identique.
 Durée : 1,1 s pour les deux parties.
+
+### 2017 — jour 22 : Sporifica Virus
+
+Grille **25 × 25** (315 nœuds infectés), virus au centre orienté vers le haut,
+grille creuse s'étendant à l'infini.
+
+- **Partie 1 — 5256.** Rafales infectantes sur 10 000 (sain → gauche, infecté →
+  droite).
+- **Partie 2 — 2511345.** Sur 10 000 000 de rafales, avec quatre états
+  (sain → affaibli → infecté → drapeau → sain).
+
+Exemples officiels (`..#`/`#..`/`...#`) : P1 → **5** (7 rafales), **41** (70),
+**5587** (10 000) ✔ ; P2 → **26** (100 rafales), **2511944** (10 M) ✔.
+Durée : 3,6 s pour les deux parties.
 
 ### 2025 — jour 1 : Secret Entrance
 

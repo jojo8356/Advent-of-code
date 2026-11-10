@@ -25,3 +25,4 @@ Exercices répartis dans `dayNN/`, une entrée de puzzle partagée par jour dans
 | 19 | [part1.py](day19/part1.py) | [part2.py](day19/part2.py) | [day19.txt](inputs/day19.txt) | suivi de tube sur grille, virages aux `+` |
 | 20 | [part1.py](day20/part1.py) | [part2.py](day20/part2.py) | [day20.txt](inputs/day20.txt) | tri par accélération, puis collisions avec horizon analytique |
 | 21 | [part1.py](day21/part1.py) | [part2.py](day21/part2.py) | [day21.txt](inputs/day21.txt) | fractales, blocs 2×2/3×3 et 8 symétries |
+| 22 | [part1.py](day22/part1.py) | [part2.py](day22/part2.py) | [day22.txt](inputs/day22.txt) | virus de Langton, grille creuse à 4 états |
