@@ -91,6 +91,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 21 | **158** | **2301762** | ✅ |
 | 22 | **5256** | **2511345** | ✅ |
 | 23 | **3969** | **917** | ✅ |
+| 24 | **1695** | **1673** | ✅ |
 
 ## 2020
 
@@ -1022,6 +1023,18 @@ Les constantes sont lues dans le code (`set b 65`, `mul b 100`, `sub b -100000`,
 des boucles : `d` et `e` parcourent `2..b-1` (test de divisibilité), `f = 0`
 signifie composite, et les bornes `b`/`c` correspondent exactement à `debut` et
 `fin` (1 000 pas, dernier terme = `c`). Durée : 0,1 s.
+
+### 2017 — jour 24 : Electromagnetic Moat
+
+**57** composants (force totale disponible 2 785).
+
+- **Partie 1 — 1695.** Force maximale d'un pont partant d'un port 0.
+- **Partie 2 — 1673.** Le pont le plus long compte **36** composants ; parmi les
+  ponts de cette longueur, le plus fort pèse 1 673.
+
+Exemple officiel : P1 → **31** ✔, P2 → **19** ✔. Recalcul indépendant par
+mémoïsation sur `(port, ensemble restant)` (149 503 états) : 1695 / 1673 et
+longueur 36 à l'identique. Durée : 0,4 s.
 
 ### 2025 — jour 1 : Secret Entrance
 
