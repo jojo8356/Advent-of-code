@@ -87,6 +87,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 17 | **417** | **34334221** | ✅ |
 | 18 | **2951** | **7366** | ✅ |
 | 19 | **LXWCKGRAOY** | **17302** | ✅ |
+| 20 | **258** | **707** | ✅ |
 
 ## 2020
 
@@ -955,6 +956,27 @@ Diagramme **201 × 201**, départ en `(0, 103)`, 10 lettres.
 Exemple officiel : P1 → **ABCDEF** ✔, P2 → **38** ✔ (les 8 segments donnés par
 l'énoncé totalisent bien 38). Recalcul indépendant (virage choisi par test
 explicite des 4 directions) : mêmes valeurs.
+
+### 2017 — jour 20 : Particle Swarm
+
+**1 000** particules (`p`, `v`, `a`), mise à jour semi-implicite (`v += a`, puis
+`p += v`).
+
+- **Partie 1 — 258.** Indice 0-based de la particule la plus proche à long
+  terme. C'est la **seule** du jeu dont l'accélération est minimale
+  (`|a|² = 1`) ; à `t = 10⁷` elle est toujours la plus proche
+  (`(1398, -1069, 321)`, `v = (-59, 52, -15)`, `a = (-1, 0, 0)`).
+- **Partie 2 — 707.** Particules restantes après destruction des collisions.
+
+Exemples officiels : P1 → **0** ✔, P2 → **1** ✔ (4 particules → 3 collisions
+simultanées à `t = 1`, puis 1 survivante).
+Horizon de simulation **calculé**, pas deviné : racines entières des équations du
+second degré par paire → dernier instant possible `t = 38`, qui est bien le
+dernier tick meurtrier observé. Au-delà, stable jusqu'à 1 000 ticks.
+
+⚠️ Piège majeur : chercher le **minimum de distance au cours du temps** donne 111,
+qui est faux. La question porte sur la position **à long terme**, dominée par
+l'accélération.
 
 ### 2025 — jour 1 : Secret Entrance
 
