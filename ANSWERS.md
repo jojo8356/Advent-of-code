@@ -88,6 +88,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 18 | **2951** | **7366** | ✅ |
 | 19 | **LXWCKGRAOY** | **17302** | ✅ |
 | 20 | **258** | **707** | ✅ |
+| 21 | **158** | **2301762** | ✅ |
 
 ## 2020
 
@@ -977,6 +978,19 @@ dernier tick meurtrier observé. Au-delà, stable jusqu'à 1 000 ticks.
 ⚠️ Piège majeur : chercher le **minimum de distance au cours du temps** donne 111,
 qui est faux. La question porte sur la position **à long terme**, dominée par
 l'accélération.
+
+### 2017 — jour 21 : Fractal Art
+
+Départ `.#./..#/###`, **108** règles (6 pour les blocs 2×2, 102 pour les 3×3),
+chaque motif accepté sous ses **8 symétries**.
+
+- **Partie 1 — 158.** Pixels `#` après 5 itérations (grille 18 × 18).
+- **Partie 2 — 2301762.** Après 18 itérations (grille 2 187 × 2 187).
+
+Exemple officiel (2 itérations) : grille intermédiaire `#..#/..../..../#..#` puis
+**12** pixels ✔ — exactement les valeurs de l'énoncé. Recalcul indépendant
+(indexation des blocs, rotations explicites) : 158 / 2301762 à l'identique.
+Durée : 1,1 s pour les deux parties.
 
 ### 2025 — jour 1 : Secret Entrance
 
