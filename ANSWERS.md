@@ -86,6 +86,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 16 | **padheomkgjfnblic** | **bfcdeakhijmlgopn** | ✅ |
 | 17 | **417** | **34334221** | ✅ |
 | 18 | **2951** | **7366** | ✅ |
+| 19 | **LXWCKGRAOY** | **17302** | ✅ |
 
 ## 2020
 
@@ -942,6 +943,18 @@ boucle par pas) : 2951 / 7366 à l'identique ; les deux files finissent vides.
 qu'un programme attendait, sans laisser l'autre progresser puis lui répondre —
 il renvoyait 0. Il faut faire tourner chaque programme **jusqu'à son blocage**
 et ne s'arrêter que lorsque **aucun** des deux ne progresse plus.
+
+### 2017 — jour 19 : A Series of Tubes
+
+Diagramme **201 × 201**, départ en `(0, 103)`, 10 lettres.
+
+- **Partie 1 — `LXWCKGRAOY`.** Les 10 lettres de la grille sont visitées, sans
+  doublon.
+- **Partie 2 — 17302.** Cases parcourues jusqu'à sortir du diagramme.
+
+Exemple officiel : P1 → **ABCDEF** ✔, P2 → **38** ✔ (les 8 segments donnés par
+l'énoncé totalisent bien 38). Recalcul indépendant (virage choisi par test
+explicite des 4 directions) : mêmes valeurs.
 
 ### 2025 — jour 1 : Secret Entrance
 

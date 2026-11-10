@@ -22,3 +22,4 @@ Exercices répartis dans `dayNN/`, une entrée de puzzle partagée par jour dans
 | 16 | [part1.py](day16/part1.py) | [part2.py](day16/part2.py) | [day16.txt](inputs/day16.txt) | danses s/x/p puis détection de période |
 | 17 | [part1.py](day17/part1.py) | [part2.py](day17/part2.py) | [day17.txt](inputs/day17.txt) | tampon circulaire, puis suivi de la position 1 |
 | 18 | [part1.py](day18/part1.py) | [part2.py](day18/part2.py) | [day18.txt](inputs/day18.txt) | VM à registres, puis deux programmes en files de messages |
+| 19 | [part1.py](day19/part1.py) | [part2.py](day19/part2.py) | [day19.txt](inputs/day19.txt) | suivi de tube sur grille, virages aux `+` |
