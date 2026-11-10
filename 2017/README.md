@@ -22,3 +22,10 @@ Exercices répartis dans `dayNN/`, une entrée de puzzle partagée par jour dans
 | 16 | [part1.py](day16/part1.py) | [part2.py](day16/part2.py) | [day16.txt](inputs/day16.txt) | danses s/x/p puis détection de période |
 | 17 | [part1.py](day17/part1.py) | [part2.py](day17/part2.py) | [day17.txt](inputs/day17.txt) | tampon circulaire, puis suivi de la position 1 |
 | 18 | [part1.py](day18/part1.py) | [part2.py](day18/part2.py) | [day18.txt](inputs/day18.txt) | VM à registres, puis deux programmes en files de messages |
+| 19 | [part1.py](day19/part1.py) | [part2.py](day19/part2.py) | [day19.txt](inputs/day19.txt) | suivi de tube sur grille, virages aux `+` |
+| 20 | [part1.py](day20/part1.py) | [part2.py](day20/part2.py) | [day20.txt](inputs/day20.txt) | tri par accélération, puis collisions avec horizon analytique |
+| 21 | [part1.py](day21/part1.py) | [part2.py](day21/part2.py) | [day21.txt](inputs/day21.txt) | fractales, blocs 2×2/3×3 et 8 symétries |
+| 22 | [part1.py](day22/part1.py) | [part2.py](day22/part2.py) | [day22.txt](inputs/day22.txt) | virus de Langton, grille creuse à 4 états |
+| 23 | [part1.py](day23/part1.py) | [part2.py](day23/part2.py) | [day23.txt](inputs/day23.txt) | machine `set/sub/mul/jnz`, puis primalité déroulée |
+| 24 | [part1.py](day24/part1.py) | [part2.py](day24/part2.py) | [day24.txt](inputs/day24.txt) | ponts, retour sur trace avec indexation par port |
+| 25 | [part1.py](day25/part1.py) | [part2.py](day25/part2.py) | [day25.txt](inputs/day25.txt) | machine de Turing, bande creuse |

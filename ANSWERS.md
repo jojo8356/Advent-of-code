@@ -86,6 +86,13 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 16 | **padheomkgjfnblic** | **bfcdeakhijmlgopn** | ✅ |
 | 17 | **417** | **34334221** | ✅ |
 | 18 | **2951** | **7366** | ✅ |
+| 19 | **LXWCKGRAOY** | **17302** | ✅ |
+| 20 | **258** | **707** | ✅ |
+| 21 | **158** | **2301762** | ✅ |
+| 22 | **5256** | **2511345** | ✅ |
+| 23 | **3969** | **917** | ✅ |
+| 24 | **1695** | **1673** | ✅ |
+| 25 | **2725** | — | ✅ |
 
 ## 2020
 
@@ -942,6 +949,105 @@ boucle par pas) : 2951 / 7366 à l'identique ; les deux files finissent vides.
 qu'un programme attendait, sans laisser l'autre progresser puis lui répondre —
 il renvoyait 0. Il faut faire tourner chaque programme **jusqu'à son blocage**
 et ne s'arrêter que lorsque **aucun** des deux ne progresse plus.
+
+### 2017 — jour 19 : A Series of Tubes
+
+Diagramme **201 × 201**, départ en `(0, 103)`, 10 lettres.
+
+- **Partie 1 — `LXWCKGRAOY`.** Les 10 lettres de la grille sont visitées, sans
+  doublon.
+- **Partie 2 — 17302.** Cases parcourues jusqu'à sortir du diagramme.
+
+Exemple officiel : P1 → **ABCDEF** ✔, P2 → **38** ✔ (les 8 segments donnés par
+l'énoncé totalisent bien 38). Recalcul indépendant (virage choisi par test
+explicite des 4 directions) : mêmes valeurs.
+
+### 2017 — jour 20 : Particle Swarm
+
+**1 000** particules (`p`, `v`, `a`), mise à jour semi-implicite (`v += a`, puis
+`p += v`).
+
+- **Partie 1 — 258.** Indice 0-based de la particule la plus proche à long
+  terme. C'est la **seule** du jeu dont l'accélération est minimale
+  (`|a|² = 1`) ; à `t = 10⁷` elle est toujours la plus proche
+  (`(1398, -1069, 321)`, `v = (-59, 52, -15)`, `a = (-1, 0, 0)`).
+- **Partie 2 — 707.** Particules restantes après destruction des collisions.
+
+Exemples officiels : P1 → **0** ✔, P2 → **1** ✔ (4 particules → 3 collisions
+simultanées à `t = 1`, puis 1 survivante).
+Horizon de simulation **calculé**, pas deviné : racines entières des équations du
+second degré par paire → dernier instant possible `t = 38`, qui est bien le
+dernier tick meurtrier observé. Au-delà, stable jusqu'à 1 000 ticks.
+
+⚠️ Piège majeur : chercher le **minimum de distance au cours du temps** donne 111,
+qui est faux. La question porte sur la position **à long terme**, dominée par
+l'accélération.
+
+### 2017 — jour 21 : Fractal Art
+
+Départ `.#./..#/###`, **108** règles (6 pour les blocs 2×2, 102 pour les 3×3),
+chaque motif accepté sous ses **8 symétries**.
+
+- **Partie 1 — 158.** Pixels `#` après 5 itérations (grille 18 × 18).
+- **Partie 2 — 2301762.** Après 18 itérations (grille 2 187 × 2 187).
+
+Exemple officiel (2 itérations) : grille intermédiaire `#..#/..../..../#..#` puis
+**12** pixels ✔ — exactement les valeurs de l'énoncé. Recalcul indépendant
+(indexation des blocs, rotations explicites) : 158 / 2301762 à l'identique.
+Durée : 1,1 s pour les deux parties.
+
+### 2017 — jour 22 : Sporifica Virus
+
+Grille **25 × 25** (315 nœuds infectés), virus au centre orienté vers le haut,
+grille creuse s'étendant à l'infini.
+
+- **Partie 1 — 5256.** Rafales infectantes sur 10 000 (sain → gauche, infecté →
+  droite).
+- **Partie 2 — 2511345.** Sur 10 000 000 de rafales, avec quatre états
+  (sain → affaibli → infecté → drapeau → sain).
+
+Exemples officiels (`..#`/`#..`/`...#`) : P1 → **5** (7 rafales), **41** (70),
+**5587** (10 000) ✔ ; P2 → **26** (100 rafales), **2511944** (10 M) ✔.
+Durée : 3,6 s pour les deux parties.
+
+### 2017 — jour 23 : Coprocessor Conflagration
+
+Programme de **32** instructions (`set`, `sub`, `mul`, `jnz`), registres `a`–`h`.
+
+- **Partie 1 — 3969.** Nombre d'exécutions de `mul` avec `a = 0`.
+- **Partie 2 — 917.** Avec `a = 1`, le programme déroulé teste la primalité de
+  `b` pour `b` allant de **106 500** à **123 500** par pas de **17** et compte
+  les composites : **1 001** termes dont **84** premiers → **917** composites.
+
+Les constantes sont lues dans le code (`set b 65`, `mul b 100`, `sub b -100000`,
+`sub c -17000`, `sub b -17`), pas devinées. Cohérence vérifiée sur la structure
+des boucles : `d` et `e` parcourent `2..b-1` (test de divisibilité), `f = 0`
+signifie composite, et les bornes `b`/`c` correspondent exactement à `debut` et
+`fin` (1 000 pas, dernier terme = `c`). Durée : 0,1 s.
+
+### 2017 — jour 24 : Electromagnetic Moat
+
+**57** composants (force totale disponible 2 785).
+
+- **Partie 1 — 1695.** Force maximale d'un pont partant d'un port 0.
+- **Partie 2 — 1673.** Le pont le plus long compte **36** composants ; parmi les
+  ponts de cette longueur, le plus fort pèse 1 673.
+
+Exemple officiel : P1 → **31** ✔, P2 → **19** ✔. Recalcul indépendant par
+mémoïsation sur `(port, ensemble restant)` (149 503 états) : 1695 / 1673 et
+longueur 36 à l'identique. Durée : 0,4 s.
+
+### 2017 — jour 25 : The Halting Problem
+
+Machine de Turing à **6 états**, **12 368 930** étapes, bande creuse.
+
+- **Partie 1 — 2725.** Checksum (nombre de 1) à la fin. La tête termine en
+  position `-2626`, après avoir visité 4 090 cases (`-3988` à `101`).
+- **Partie 2 — aucune.** Ce jour n'a pas de seconde partie : la 50ᵉ étoile est
+  offerte. `part2.py` est un substitut explicite.
+
+Exemple officiel (6 étapes) : **3** ✔. Recalcul indépendant (ensemble des
+positions à 1) : 2725 à l'identique. Durée : 2,1 s.
 
 ### 2025 — jour 1 : Secret Entrance
 
