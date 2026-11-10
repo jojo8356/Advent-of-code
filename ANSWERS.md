@@ -90,6 +90,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 20 | **258** | **707** | ✅ |
 | 21 | **158** | **2301762** | ✅ |
 | 22 | **5256** | **2511345** | ✅ |
+| 23 | **3969** | **917** | ✅ |
 
 ## 2020
 
@@ -1006,6 +1007,21 @@ grille creuse s'étendant à l'infini.
 Exemples officiels (`..#`/`#..`/`...#`) : P1 → **5** (7 rafales), **41** (70),
 **5587** (10 000) ✔ ; P2 → **26** (100 rafales), **2511944** (10 M) ✔.
 Durée : 3,6 s pour les deux parties.
+
+### 2017 — jour 23 : Coprocessor Conflagration
+
+Programme de **32** instructions (`set`, `sub`, `mul`, `jnz`), registres `a`–`h`.
+
+- **Partie 1 — 3969.** Nombre d'exécutions de `mul` avec `a = 0`.
+- **Partie 2 — 917.** Avec `a = 1`, le programme déroulé teste la primalité de
+  `b` pour `b` allant de **106 500** à **123 500** par pas de **17** et compte
+  les composites : **1 001** termes dont **84** premiers → **917** composites.
+
+Les constantes sont lues dans le code (`set b 65`, `mul b 100`, `sub b -100000`,
+`sub c -17000`, `sub b -17`), pas devinées. Cohérence vérifiée sur la structure
+des boucles : `d` et `e` parcourent `2..b-1` (test de divisibilité), `f = 0`
+signifie composite, et les bornes `b`/`c` correspondent exactement à `debut` et
+`fin` (1 000 pas, dernier terme = `c`). Durée : 0,1 s.
 
 ### 2025 — jour 1 : Secret Entrance
 
