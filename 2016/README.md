@@ -16,3 +16,16 @@ Exercices répartis dans `dayNN/`, une entrée de puzzle partagée par jour dans
 | 10 | [part1.py](day10/part1.py) | [part2.py](day10/part2.py) | [day10.txt](inputs/day10.txt) | 210 bots, 21 valeurs initiales |
 | 11 | [part1.py](day11/part1.py) | [part2.py](day11/part2.py) | [day11.txt](inputs/day11.txt) | BFS canonisé (RTG) |
 | 12 | [part1.py](day12/part1.py) | [part2.py](day12/part2.py) | [day12.txt](inputs/day12.txt) | assembleur, boucles multipliées |
+| 13 | [part1.py](day13/part1.py) | [part2.py](day13/part2.py) | [day13.txt](inputs/day13.txt) | labyrinthe par bits, BFS |
+| 14 | [part1.py](day14/part1.py) | [part2.py](day14/part2.py) | [day14.txt](inputs/day14.txt) | MD5 + triplets/quintuplets, étirement |
+| 15 | [part1.py](day15/part1.py) | [part2.py](day15/part2.py) | [day15.txt](inputs/day15.txt) | congruences, disque #7 ajouté |
+| 16 | [part1.py](day16/part1.py) | [part2.py](day16/part2.py) | [day16.txt](inputs/day16.txt) | courbe du dragon + somme de contrôle |
+| 17 | [part1.py](day17/part1.py) | [part2.py](day17/part2.py) | [day17.txt](inputs/day17.txt) | MD5, BFS sur le labyrinthe 4×4 |
+| 18 | [part1.py](day18/part1.py) | [part2.py](day18/part2.py) | [day18.txt](inputs/day18.txt) | automate 1D, 40 puis 400 000 rangées |
+| 19 | [part1.py](day19/part1.py) | [part2.py](day19/part2.py) | [day19.txt](inputs/day19.txt) | Josèphe (formules fermées + simulation) |
+| 20 | [part1.py](day20/part1.py) | [part2.py](day20/part2.py) | [day20.txt](inputs/day20.txt) | 1 176 plages d'IP, fusion |
+| 21 | [part1.py](day21/part1.py) | [part2.py](day21/part2.py) | [day21.txt](inputs/day21.txt) | brouillage, puis brute force sur 8! |
+| 22 | [part1.py](day22/part1.py) | [part2.py](day22/part2.py) | [day22.txt](inputs/day22.txt) | grille 35×29, déplacement du trou |
+| 23 | [part1.py](day23/part1.py) | [part2.py](day23/part2.py) | [day23.txt](inputs/day23.txt) | assembleur + `tgl`, motifs optimisés |
+| 24 | [part1.py](day24/part1.py) | [part2.py](day24/part2.py) | [day24.txt](inputs/day24.txt) | 8 points, BFS + permutations |
+| 25 | [part1.py](day25/part1.py) | — | [day25.txt](inputs/day25.txt) | signal d'horloge, `out` |
