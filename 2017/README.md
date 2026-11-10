@@ -28,3 +28,4 @@ Exercices répartis dans `dayNN/`, une entrée de puzzle partagée par jour dans
 | 22 | [part1.py](day22/part1.py) | [part2.py](day22/part2.py) | [day22.txt](inputs/day22.txt) | virus de Langton, grille creuse à 4 états |
 | 23 | [part1.py](day23/part1.py) | [part2.py](day23/part2.py) | [day23.txt](inputs/day23.txt) | machine `set/sub/mul/jnz`, puis primalité déroulée |
 | 24 | [part1.py](day24/part1.py) | [part2.py](day24/part2.py) | [day24.txt](inputs/day24.txt) | ponts, retour sur trace avec indexation par port |
+| 25 | [part1.py](day25/part1.py) | [part2.py](day25/part2.py) | [day25.txt](inputs/day25.txt) | machine de Turing, bande creuse |

@@ -92,6 +92,7 @@ sur l'entrée de `inputs/` avec `python3 run.py <année> <jour> <partie>`.
 | 22 | **5256** | **2511345** | ✅ |
 | 23 | **3969** | **917** | ✅ |
 | 24 | **1695** | **1673** | ✅ |
+| 25 | **2725** | — | ✅ |
 
 ## 2020
 
@@ -1035,6 +1036,18 @@ signifie composite, et les bornes `b`/`c` correspondent exactement à `debut` et
 Exemple officiel : P1 → **31** ✔, P2 → **19** ✔. Recalcul indépendant par
 mémoïsation sur `(port, ensemble restant)` (149 503 états) : 1695 / 1673 et
 longueur 36 à l'identique. Durée : 0,4 s.
+
+### 2017 — jour 25 : The Halting Problem
+
+Machine de Turing à **6 états**, **12 368 930** étapes, bande creuse.
+
+- **Partie 1 — 2725.** Checksum (nombre de 1) à la fin. La tête termine en
+  position `-2626`, après avoir visité 4 090 cases (`-3988` à `101`).
+- **Partie 2 — aucune.** Ce jour n'a pas de seconde partie : la 50ᵉ étoile est
+  offerte. `part2.py` est un substitut explicite.
+
+Exemple officiel (6 étapes) : **3** ✔. Recalcul indépendant (ensemble des
+positions à 1) : 2725 à l'identique. Durée : 2,1 s.
 
 ### 2025 — jour 1 : Secret Entrance
 
